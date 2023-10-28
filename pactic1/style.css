@@ -1,87 +1,101 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
 
     --Darkcyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+html,body{
+
+    height: 100%;
 }
 body{
 
     background: var(--Cream);
-}
-html,body{
-
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
-.divp{
+.card{
+        display: flex;
+        width: 600px;
+       
+        
+        
+        
+}
+h1, h2, h3, h4, h5, h6{
 
-    max-width: 220px;
-    background-color: rgb(255, 255, 255);
-    height: 350px;
+    font-weight: 700;
+    font-family: ;
+    margin-bottom: 15px;
 }
-.flex{
-
-    display: flex;
+p{
+    font-weight: 400;
+    margin-bottom: 15px;
 }
-.flex img{
-
-            max-width: 100%;
-            height: 350px;
-}
-.divp h6,h2,p{
-
-    margin: 20px 20px;
-    
-    
-}
-.divp h2{
+.card-img img{
 
    
-    font-weight:700;
-    font-family: 'Fraunces', serif;
 
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    display: block;
 }
-.divp p{
+.card-img {
+
+    flex-basis: 50%;
+}
+.card-body {
+
+    flex-basis: 50%;
+    border-radius:  0 10px 10px 0;
+    padding: 30px;
+    background-color: white;
+}
+.card-body h2{
+    font-size: 32px;
+}
+.card-body h6{
 
     font-size: 14px;
-    
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
-.divp #hh{
+.card-body p{
+
+    font-size: 14px;
+    color: darkblue;
+    line-height: 1.5em;
+}
+.card-body p.price{
 
     color: var(--Darkcyan);
-    display: inline;
+    font-size: 32px;
+    position: relative;
 }
+.card-body p.price span{
 
-h6{
-
-    
-font-family: 'Montserrat', sans-serif;
-font-size: 14px;
-opacity: 0.5;
+    font-size: 14px;
+    position: absolute;
+    top:2.05;
+    left: 120px;
+    text-decoration:line-through;
 }
 button{
-    
-    margin: 20px 0px;
-    margin-left: 50px;
-    padding: 5px 50px ;
-    border-radius: 5px;   
-    background: var(--Darkcyan);
-    color: white; 
-    border: none;
-    cursor: pointer;
-    
-    
-}
-.p1{
-    position:relative;
-    display: inline;
-    left: -30px;
-    top: -5px;
 
+    background-color: var(--Darkcyan);
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
 }
