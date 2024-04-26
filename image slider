@@ -1,0 +1,27 @@
+var a = ["/Revetion/Facebook_Logo_2023.png","/Revetion/fiver.com 1.png","/Revetion/fiver.com Screenshot 2023.png"]
+
+var b1 = document.querySelector("img");
+var count = 0;
+
+function y()
+{
+    count++;
+    if(count >= a.length)
+    {
+        count = 0;
+        b1.src = a[count];
+    }else{b1.src = a[count]};
+    b1.src=a[count];
+
+}
+
+function x()
+{
+    count--;
+    if(count<0)
+    {
+        count=2;
+      b1.src =  a[count];
+    }else{b1.src = a[count]}
+    b1.src = a[count];
+};
